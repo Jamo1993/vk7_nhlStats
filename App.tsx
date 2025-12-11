@@ -88,7 +88,7 @@ export default function App() {
         )}
 
         {playerStats && (
-          <View style={{ marginTop: 20 }}>
+          <View style={styles.playerStats}>
             <Text>Player: {playerStats.skaterFullName}</Text>
             <Text>Team: {playerStats.teamAbbrevs}</Text>
             <Text>Games played: {playerStats.gamesPlayed}</Text>
@@ -120,9 +120,10 @@ const styles = StyleSheet.create({
   input: {
     width:'100%',
     borderWidth:2,
-    paddingHorizontal:50,
-    paddingVertical:20,
+    paddingHorizontal:10,
+    paddingVertical:10,
     marginBottom:20,
+    
     
   },
   Heading: {
@@ -133,5 +134,12 @@ const styles = StyleSheet.create({
   title: {
    padding:20,
    marginBottom:20,
+  },
+  playerStats: {
+    marginTop:20,
+    borderWidth:1,
+    paddingHorizontal:10,
+    paddingVertical:10,
+
   }
 });
